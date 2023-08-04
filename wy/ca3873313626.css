@@ -358,7 +358,9 @@ p.footer {
 	position: absolute;
 }
 
-
+.go {
+	margin-left: 230px !important;
+}
 body {
 	background-color: #01a982;
 }
