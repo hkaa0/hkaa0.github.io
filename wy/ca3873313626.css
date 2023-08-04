@@ -358,9 +358,8 @@ p.footer {
 	position: absolute;
 }
 
-.go {
-	margin-left: 230px !important;
-}
+
+
 body {
 	background-color: #01a982;
 }
@@ -376,6 +375,7 @@ ul,  li {
 .go {
 	position: absolute;
 	right: 50px;
+	left: 50px;
 	border: 1px solid #ccc;
 	padding: 10px 1px;
 	border-radius: 12px;
