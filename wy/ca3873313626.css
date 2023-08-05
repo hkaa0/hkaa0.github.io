@@ -373,31 +373,31 @@ ul,  li {
 	position: relative;
 }
 .go {
-	
-	
-	border: 1px solid #ccc;
+	display: block;
 	padding: 10px 1px;
 	border-radius: 12px;
 	width: 250px;
 	text-align: center;
+	margin: 0 auto;
 	color: #666;
-	background-color: #01a982;
-
+	background-color: #01a982
 }
 .go:hover {
 	background-color: #01a982;
 	color: #fff;
+	margin: 0 auto
 }
 .go a {
 	display: block;
 	margin: 0 auto;
 	text-align: center;
 	color: #fff;
-	width: 100%;
+	width: 100%
 }
 
 .go a:hover {
 	color: #fff;
+	margin: 0 auto
 }
 
 .animation-wrapper {
