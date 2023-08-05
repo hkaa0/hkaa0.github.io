@@ -373,7 +373,7 @@ ul,  li {
 	position: relative;
 }
 .go {
-	position: absolute;
+	position: absolute !important;
 	right: 50px;
 	left: 50px;
 	border: 1px solid #ccc;
