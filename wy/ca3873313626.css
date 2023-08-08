@@ -268,7 +268,7 @@ p.footer {
 	width: 53%
 }
 p.footer {
-	margin-top: 50px
+	margin-top: 100px
 }
 }
  @media (max-width:568px) {
@@ -290,7 +290,7 @@ p.footer {
 	font-size: 28px
 }
 p.footer {
-	margin-top: 42px
+	margin-top: 100px
 }
 }
  @media (max-width:414px) {
@@ -300,11 +300,13 @@ p.footer {
 .content {
 	width: 85%
 }
+	 
+
 .main {
 }
 p.footer {
-	line-height: 1.8em;
-	margin: 42px auto 0;
+	line-height: 2em;
+	margin: 100px auto 0;
 	width: 85%
 }
 }
@@ -316,7 +318,7 @@ p.footer {
 	width: 90%
 }
 p.footer {
-	margin: 32px auto 0
+	margin: 50px auto 0
 }
 }
  @media (max-width:375px) {
@@ -484,4 +486,5 @@ to {
 	-webkit-transform: translateY(-1920px);
 	transform: translateY(-1920px);
 }
+}.color {
 }
