@@ -1,7 +1,7 @@
 # 五叶资源导航
-# hkaa0.github.io
+# https://wy.hkaa0.top
 **五叶の博客**
 
-https://halo.hkaa0.top
+https://hkaa0.top
 
-https://blog.hkaa0.top
+
