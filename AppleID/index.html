@@ -14,25 +14,6 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="/static/assets/js/htmx.min.js"></script>
 </head>
-<title>账号分享</title>
-
-<div class="container">
-            <!DOCTYPE html>
-<html lang="zh-cn">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-    <script src="https://fastly.jsdelivr.net/npm/@tabler/core@latest/dist/js/tabler.min.js"></script>
-    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/@tabler/core@latest/dist/css/tabler.min.css">
-    <link href="https://fastly.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" rel="stylesheet"/>
-    <script src="https://fastly.jsdelivr.net/npm/sweetalert2@11.10.7/dist/sweetalert2.all.min.js"></script>
-    <link href="https://fastly.jsdelivr.net/npm/sweetalert2@11.10.7/dist/sweetalert2.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script>
-    <link href="https://fastly.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="/static/assets/js/htmx.min.js"></script>
-</head>
 <title>账号合租</title>
 
 <div class="container">
@@ -52,12 +33,10 @@
 				<h2><img src="https://hkaa0.shop/favicon.ico">
 				五叶小火箭合租账号临时地址</h2>
 			</div>
-			<div class="topbox">
+			
 				<div class="left">
 					<div class="swiper-container swiper-container-initialized swiper-container-horizontal">
-						<div class="swiper-wrapper" style="transform: translate3d(-670px, 0px, 0px); transition-duration: 0ms;"><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active swiper-slide-prev" data-swiper-slide-index="0" style="width: 670px;">
-								
-							</div>
+						
 
 								
 							</div>
@@ -105,80 +84,3 @@
 			})
 		</script>
 	<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;8d9bbc0b8dff8b4b&quot;,&quot;version&quot;:&quot;2024.10.4&quot;,&quot;r&quot;:1,&quot;token&quot;:&quot;8d9cca0960d644bd9515a005471ed140&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}}}" crossorigin="anonymous"></script>
-        <div class="row row-deck">
-                        <div class="col-xs-3 col-md-3">
-                    <div class="card shadow-lg" style="margin-top: 1rem;">
-                        <div class="card-status-start bg-green"></div>
-                        <div class="card-body">
-                           
-                        </div>
-                    </div>
-                </div>
-                        </div>
-    <br>
-    </div>
-
-
-<script>
-    htmx.on("htmx:afterRequest", function (evt) {
-        let res = JSON.parse(evt.detail.xhr.response);
-        const timeout = 1000;
-
-        if (res.ret === 1) {
-            Swal.fire({
-                heightAuto: false,
-                icon: 'success',
-                title: '成功',
-                text: res.msg,
-                showConfirmButton: true,
-                timer: 2000,
-                timerProgressBar: true,
-                allowOutsideClick: false,
-            });
-        } else {
-            Swal.fire({
-                heightAuto: false,
-                icon: 'error',
-                title: '错误',
-                text: res.msg
-            });
-        }
-
-        if (evt.detail.xhr.getResponseHeader('HX-Redirect')) {
-            return;
-        }
-        if (evt.detail.xhr.getResponseHeader('HX-Refresh')) {
-            setTimeout(function () {
-                location.reload();
-            }, timeout);
-        }
-    });
-</script>
-
-<script>
-    document.addEventListener('htmx:beforeRequest', (event) => {
-        if (event.detail.elt.classList.contains('manual-unblock')) {
-            Swal.fire({
-                title: '处理中...',
-                allowOutsideClick: false,
-                showConfirmButton: false,
-                onBeforeOpen: () => {
-                    Swal.showLoading();
-                }
-            });
-        }
-    });
-
-    var clipboard = new ClipboardJS('.btn');
-
-    function alert_success() {
-        Swal.fire({
-            title: '复制成功',
-            width: 300,
-            timer: 1000,
-            showConfirmButton: false,
-            timerProgressBar: true
-        });
-    }
-</script>
-
